@@ -1,47 +1,10 @@
 'use client';
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
-import {
-    ChatBubbleLeftIcon,
-    ChevronDownIcon,
-    HomeIcon,
-    PaperAirplaneIcon,
-    PhoneIcon,
-    PlayCircleIcon,
-  } from "@heroicons/react/20/solid";
-
-  const products = [
-    {
-      name: "Book a Stay",
-      description: "Get a better understanding of your traffic",
-      href: "#",
-      icon: HomeIcon,
-    },
-    {
-      name: "Book a Flight",
-      description: "Speak directly to your customers",
-      href: "#",
-      icon: PaperAirplaneIcon,
-    },
-    {
-      name: "Contact our Support Team",
-      description: "Your customers’ data will be safe and secure",
-      href: "#",
-      icon: ChatBubbleLeftIcon,
-    },
-  ];
-
-  const menuLinks = [
-    {name: 'Flights',},
-    {name: 'Car Rentals',},
-    {name: 'Attractions',},
-    {name: 'Flight + Hotel',},
-  ]
-
-  const callsToAction = [
-    { name: "See Demo Booking", href: "#", icon: PlayCircleIcon },
-    { name: "Contact Support", href: "#", icon: PhoneIcon },
-  ];
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import { products } from "@/data/products";
+import { menuLinks } from "@/data/menuLinks";
+import { callsToAction } from "@/data/callsToAction";
 
 export default function MenuPopover() {
   return (
