@@ -41,7 +41,7 @@ async function SearchPage({ searchParams }: Props) {
         </h3>
 
         <div className="space-y-2 mt-5">
-          {results.content.listings.map((item, i) => (
+          {results.content.listings.map((item: any, i: any) => (
             <div
               key={i}
               className="flex space-y-2 justify-between space-x-4 p-5 border rounded-lg"
